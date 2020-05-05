@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/Register.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Crossed Swords Guild - Register</title>
+    </head>
+
+<body class="mid">
+    <img class="mainimg" src="Assets/Logo.png" alt="Logo">
+    <div class="container">
+        <div class="row">
+            <h4 class="form">Registration Form</h4>
+        <div class="card">
+            <div class="card-content">
+                <div class="input-field">
+                    <label for="name">Name</label><br>
+                    <input value="Alissa Violet" id="name" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="nik">NIK</label><br>
+                    <input value="2005583" id="nik" type="number" class="validate">
+                </div>
+                <p>
+                <div class="membertype">Member Type:    
+                </div>
+                    <label>
+                    <input name="group1" type="radio" value="civilian" checked />
+                        <span>Civilian</span>
+                    </label>
+                    <label>
+                    <input name="group1" type="radio" value="member" />
+                        <span>Guild Member</span>
+                    </label>
+                </p>
+                <p><div class="period">Join Period: </div>
+                    <label>
+                    <input name="group2" type="radio" value="1month" checked />
+                        <span>1-month</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="3months" type="radio" />
+                        <span>3-months</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="halfyear" type="radio" />
+                        <span>Half year</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="year" type="radio" />
+                        <span>Year</span>
+                    </label>
+                </p>
+                <div class="input-field">
+                    <label for="profession">Profession</label><br>
+                    <input value="Influencer" id="profession" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="skillset">Skillset</label><br>
+                    <input value="Content Creator" id="skillset" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label><br>
+                    <input value="13, Beverly Hills CA" id="address" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="birthdate">Birthdate</label><br>
+                    <input id="birthdate" value="12-06-1996" type="text" class="datepicker">
+                </div>
+                <div class="input-field">
+                    <label for="codename">Code Name</label><br>
+                    <input value="AlissaViolet8" id="codename" type="text" class="validate">
+                </div><br>
+                <button id="myBtn" class="registerbutton" type="button">Register</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal" class="modalcontent">
+        <h4>Success!</h4>
+            <p>Please login with:</p>
+            <p>Username: <b>AlissaViolet8</b></p>
+            <p>Password: <b>AV987!</b></p>
+    </div>
+        <div class="loginbutton">
+            <a class="lgnbtn" href="Login.html">Login</a>
+        </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    
+</body>
+</html>
