@@ -1,0 +1,35 @@
+.mngr {
+    display: block;
+    border: solid 1px cornflowerblue;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.advntr {
+    display: block;
+    border: solid 1px cornflowerblue;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+.cvln {
+    display: block;
+    border: solid 1px cornflowerblue;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: lightpink;
+    cursor: pointer;
+}
