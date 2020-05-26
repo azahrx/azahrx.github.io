@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home ‧ Crossed Swords Guild</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navigbar" >
+        <ul> 	
+              <li><b>   <a class="navilink" href="index.html"> Home  </a>   </b></li> 
+              <li><b>   <a class="navilink" href="about.html"> About Us </a>   </b></li>
+              <li><b>   <a class="navilink" href="members.html"> Members </a>   </b></li> 	
+              <li><b>   <a class="navilink" href="quiz.html"> Dev Info </a>   </b></li> 	
+              <li><b>   <a class="navilink" href="market.html"> Market </a>   </b></li> 
+              <li><b>   <a class="navilink" href="admin.html"> Admin </a>   </b></li>
+              <li><b>   <a class="navilink" href="account.html"> Account </a>   </b></li>
+              <li><b>   <a class="navilink" href="login.html"> Login </a>   </b></li> 
+          </ul>
+      </nav> 
+    </header>
+<img class="parallax" src="Assets/Logo.png">
+<h1 class="desc"> CROSSED SWORDS GUILD </h1>
+<h2 class="motto"> Fighting others fairly while building each other. </h1>
+
+<div class="content">
+    <h1 class="titleabout">User Profile</h1>
+        <img class="mempic" src="Assets/newphoto.jpg">
+        <div class="card2"><div class="details">
+            <h3>Name: Alissa Violet</h3>
+            <h3>Username: AlissaViolet8</h3>
+            <h3>NIK: 2005583</h3>
+            <h3>Member Type: Adventurer</h3>
+            <h3>Join Period: A year</h3>
+            <h3>Profession: Influencer</h3>
+            <h3>Skillset: Content Creator</h3>
+            <h3>Address: 13, Joanna St. Jakarta</h3>
+            <h3>Birthdate: June 12, 1996</h3>
+            <h3>Favorite games: Player Unknown Battlegrounds Mobile</h3>
+            <h3>Favorite movie: La La Land</h3>
+            <h3>Status: Online</h3>
+        </div></a>
+    </div>
+
+<div class="content">
+    <h2 class="titleabout">Total Coins</h2>
+    <div class="card"><div class="rp"> 0 </div></a></div>
+    <a href="market.html" class = "extrabutton">Buy more Coins</a>
+</div>
+
+<div class="content">
+    <h2 class="titleabout">Launch Game</h2>
+    <div class="card"><div class="rp"> CROSSED SWORDS </div></a></div>
+</div>
+
+<div class="content">
+    <h2 class="titleabout">Rank Profile</h2>
+    <div class="card"><div class="rp"> Junior Fighter </div></a></div>
+    <button id="myBtn" class="registerbutton" type="button">Rank Up</button>
+</div>
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal" class="modalcontent">
+        <h4>CONGRATULATIONS! YOUR RANK IS UPGRADED!</h4>
+            <p>Current rank: <b>Senior Fighter</b></p>
+            <p>Previous rank: <b>Junior Fighter</b></p>
+    </div>
+        <div class="loginbutton">
+            <a class="lgnbtn" href="index.html">Back to Home</a>
+        </div>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel = "stylesheet" href ="CSS/Login.css">
+        <title>Login ‧ Crossed Swords Guild</title>
+      </head>
+    <body>
+      <div class="content">
+        <img class="mainimg" src="Assets/Logo.png" alt="Logo">
+        <h1 class = "login"> Log In </h1>
+        <form class = "loginbox">
+            Username <input class = "textbox" type="text" placeholder = "Username" name="Username"><br>
+            Password <input class = "textbox" type="text" placeholder = "Password" name="Password"><br>
+            <p id="numberone"></p>
+            <p> + </p>
+            <p id="numbertwo"></p>
+            <p id="test"></p>
+            <input type="text" id="result">
+            <input class = "btn" type="button" onclick="checkResult()" name = "Login" value = "Login">
+            <a href="sso.html" class = "extrabutton">Sign Up</a>
+          </form>
+        </div>
+    </body>
+    <script>
+      var numberone = Math.floor(Math.random()*10);
+      var numbertwo = Math.floor(Math.random()*10);
+      document.getElementById("numberone").innerHTML = numberone;
+      document.getElementById("numbertwo").innerHTML = numbertwo;
+      var result = numberone + numbertwo;
+      function checkResult(){
+        var userinput = document.getElementById("result").value;
+        if (userinput == result){
+          window.location.assign("index.html");
+        }
+        else{
+          alert("Password atau captcha salah!");
+        }
+      }
+    </script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/Register.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Register ‧ Crossed Swords Guild</title>
+    </head>
+
+<body class="mid">
+    <img class="mainimg" src="Assets/Logo.png" alt="Logo">
+    <div class="container">
+        <div class="row">
+            <h4 class="form">Registration Form</h4>
+        <div class="card">
+            <div class="card-content">
+                <form action="index.html">                
+                <div class="input-field">
+                    <label for="name">Full Name</label><br>
+                    <input class="textbox"  type="text" placeholder="fullname" name="fullname" pattern="[a-zA-Z]{1, 1}" title="Name must be same with KTP" required><br>
+                </div>
+                <div class="input-field">
+                    <label for="username">Username</label><br>
+                    <input class="textbox"  type="text" placeholder="username" name="username" pattern="[a-zA-Z]{1, 1}" title="Must include uppercase and lowercase" required><br>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label><br>
+                    <input class = "textbox" type="password" placeholder = "password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                </div>
+                <div class="input-field">
+                    <label for="nik">NIK</label><br>
+                    <input value="2005583" id="nik" type="number" class="validate">
+                </div>
+                <p>
+                <div class="membertype">Member Type:    
+                </div>
+                    <label>
+                    <input name="group1" type="radio" value="civilian" checked />
+                        <span>Manager</span>
+                    </label>
+                    <label>
+                    <input name="group1" type="radio" value="member" />
+                        <span>Adventurer</span>
+                    </label>
+                    <label>
+                    <input name="group1" type="radio" value="civilian" checked />
+                        <span>Civilian</span>
+                    </label>
+                </p>
+                <p><div class="period">Join Period: </div>
+                    <label>
+                    <input name="group2" type="radio" value="1month" checked />
+                        <span>1-month</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="3months" type="radio" />
+                        <span>3-months</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="halfyear" type="radio" />
+                        <span>Half year</span>
+                    </label>
+                    <label>
+                    <input name="group2" value="year" type="radio" />
+                        <span>Year</span>
+                    </label>
+                </p>
+                <div class="input-field">
+                    <label for="profession">Profession</label><br>
+                    <input value="Influencer" id="profession" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="skillset">Skillset</label><br>
+                    <input value="Content Creator" id="skillset" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label><br>
+                    <input value="13, Joanna St. Jakarta" id="address" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <label for="birthdate">Birthdate</label><br>
+                    <input id="birthdate" value="12-06-1996" type="text" class="datepicker">
+                </div>
+                <div class="input-field">
+                    <label for="phonenumber">Code Name</label><br>
+                    <input value="082361809567" id="codename" type="text" class="validate">
+                </div><br>
+                <div class="input-field">
+                    <label for="ktp">KTP example</label><br>
+                    <img class="ktp" src="Assets/newktp.jpg" alt="KTP example">
+                </div>            
+                    <label for="img">Upload KTP here</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br></br>
+                <input id="myBtn" class="registerbutton" type="submit" value="Register">
+                </div>        
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
